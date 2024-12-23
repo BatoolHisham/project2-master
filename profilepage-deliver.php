@@ -66,16 +66,16 @@
         
                 <!-- Form Section -->
                 <div class="col-md-8">
-                    <form action="update_profile.php" method="post">
+                    <form action="update_driver_profile.php" method="post">
                         
                         <div class="form-group mb-3">
                             <label for="phone-number">Phone Number</label>
-                            <input type="text" class="form-control" id="phone-number" value="<?php echo isset($_SESSION['phone']) ? htmlspecialchars($_SESSION['phone']) : '3'; ?>">
+                            <input type="text" class="form-control" id="phone-number" name="phone-number" value="<?php echo isset($_SESSION['phone']) ? htmlspecialchars($_SESSION['phone']) : '3'; ?>">
                         </div>
                     
                         <div class="form-group mb-3">
                             <label for="password">New Password</label>
-                            <input type="password" class="form-control" id="password" placeholder="Enter new password">
+                            <input type="password" class="form-control" id="password"  name="password" placeholder="Enter new password">
                         </div>
                         
                         <div class="form-group mb-3">

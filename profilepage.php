@@ -70,12 +70,12 @@
                         
                         <div class="form-group mb-3">
                             <label for="phone-number">Phone Number</label>
-                            <input type="text" class="form-control" id="phone-number" value="<?php echo isset($_SESSION['phone']) ? htmlspecialchars($_SESSION['phone']) : '3'; ?>">
+                            <input type="text" class="form-control" name="phone-number" value="<?php echo isset($_SESSION['phone']) ? htmlspecialchars($_SESSION['phone']) : '3'; ?>">
                         </div>
                     
                         <div class="form-group mb-3">
                             <label for="password">New Password</label>
-                            <input type="password" class="form-control" id="password" placeholder="Enter new password">
+                            <input type="password" class="form-control" name="password" placeholder="Enter new password">
                         </div>
                         
                         <div class="form-group mb-3">

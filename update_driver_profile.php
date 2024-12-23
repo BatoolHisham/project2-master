@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $password = password_hash($password, PASSWORD_BCRYPT);
 
-    $query = "UPDATE rest_users SET password = ? WHERE phone = ?";
+    $query = "UPDATE deliver_users SET password = ? WHERE phone = ?";
     $stmt = $pdo->prepare($query);
     $stmt->execute([$password, $phone]);
     // echo "<p>Dish Name: test</p>";

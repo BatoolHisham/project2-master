@@ -67,7 +67,7 @@
     <section class="container d-flex justify-content-center align-items-center" style="min-height: calc(100vh - 56px);">
         
         <!-- Login Form -->
-        <form id="loginForm" action="./deliveryPage.html" method="post" class="bg-white p-4 rounded-3 shadow-lg"
+        <form id="loginForm"  class="bg-white p-4 rounded-3 shadow-lg"
             style="max-width: 400px; width: 100%;">
             <h1 class="text-center mb-4">Log In</h1>
             <div class="mb-3">
@@ -124,6 +124,44 @@
             resetPasswordForm.style.display = resetPasswordForm.style.display === 'none' ? 'block' : 'none';
         }
 
+        document.getElementById('loginForm').addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        const phone = document.getElementById('phone').value;
+        const password = document.getElementById('password').value;
+        localStorage.removeItem('selectedRestaurant');
+        //action="./deliveryPage.html" method="post"
+        // Send login request to the server
+        fetch('login-deliver.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: new URLSearchParams({
+                phone: phone,
+                password: password,
+            }),
+        })
+            .then((response) => response.json())
+            .then((data) => {
+                if (data.status === 'success') {
+                    // Save the restaurant_id to localStorage
+                    //localStorage.setItem('selectedRestaurant', data.restaurant_id);
+                //   localStorage.setItem('user', data);
+                //   console.log(data.restaurant_id);
+
+                    // Redirect the user to the restaurant menu or dashboard
+                    window.location.href = 'deliveryPage.html';
+                } else {
+                    // Display an error message
+                    alert(data.message);
+                }
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+                alert('An unexpected error occurred. Please try again.');
+            });
+});
         
     </script>
 </body>
