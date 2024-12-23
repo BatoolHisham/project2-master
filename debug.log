@@ -1,0 +1,557 @@
+Array
+(
+    [name] => tala
+    [phone] => 0777054100
+    [location] => Medicin
+    [total_price] => 1
+    [payment_method] => Click
+    [basket_items] => [{"id":3,"name":"kashkawan","price":0.5,"image":"../images/milkbar-menu/kashkawan.jpg","quantity":2}]
+)
+Array
+(
+    [name] => tala
+    [phone] => 0777054100
+    [location] => Medicin
+    [total_price] => 1
+    [payment_method] => Click
+    [basket_items] => [{"id":3,"name":"kashkawan","price":0.5,"image":"../images/milkbar-menu/kashkawan.jpg","quantity":2}]
+)
+Array
+(
+    [name] => BATOOL
+    [phone] => 0777062401
+    [location] => IT
+    [total_price] => 1
+    [payment_method] => Cash
+    [basket_items] => [{"id":3,"name":"kashkawan","price":0.5,"image":"../images/milkbar-menu/kashkawan.jpg","quantity":2}]
+)
+Array
+(
+    [name] => BATOOL
+    [phone] => 0777062401
+    [location] => IT
+    [total_price] => 1
+    [payment_method] => Cash
+    [basket_items] => [{"id":3,"name":"kashkawan","price":0.5,"image":"../images/milkbar-menu/kashkawan.jpg","quantity":2}]
+)
+Array
+(
+    [name] => BATOOL
+    [phone] => 0777062401
+    [location] => IT
+    [total_price] => 1
+    [payment_method] => Click
+    [basket_items] => [{"id":3,"name":"kashkawan","price":0.5,"image":"../images/milkbar-menu/kashkawan.jpg","quantity":2}]
+)
+Array
+(
+    [name] => laith
+    [phone] => 0779969696
+    [location] => IT
+    [total_price] => 1
+    [payment_method] => Click
+    [basket_items] => [{"id":3,"name":"kashkawan","price":0.5,"image":"../images/milkbar-menu/kashkawan.jpg","quantity":2}]
+)
+Array
+(
+    [name] => laith1
+    [phone] => 0779969696
+    [location] => IT
+    [total_price] => 1
+    [payment_method] => Click
+    [basket_items] => [{"id":3,"name":"kashkawan","price":0.5,"image":"../images/milkbar-menu/kashkawan.jpg","quantity":2}]
+)
+Array
+(
+    [name] => laith1
+    [phone] => 0779969696
+    [location] => IT
+    [total_price] => 1
+    [payment_method] => Click
+    [basket_items] => [{"id":3,"name":"kashkawan","price":0.5,"image":"../images/milkbar-menu/kashkawan.jpg","quantity":2}]
+)
+POST Data: Array
+(
+    [name] => osama
+    [phone] => 0779969696
+    [location] => IT
+    [total_price] => 1
+    [payment_method] => Click
+    [basket_items] => [{"id":3,"name":"kashkawan","price":0.5,"image":"../images/milkbar-menu/kashkawan.jpg","quantity":2}]
+)
+POST Data: Array
+(
+    [name] => osama
+    [phone] => 0779969696
+    [location] => IT
+    [total_price] => 1
+    [payment_method] => Click
+    [basket_items] => [{"id":3,"name":"kashkawan","price":0.5,"image":"../images/milkbar-menu/kashkawan.jpg","quantity":2}]
+)
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Mark Order Status Called
+Array
+(
+    [order_id] => undefined
+    [status] => received
+)
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+POST Data: Array
+(
+    [name] => ali
+    [phone] => meme
+    [location] => here
+    [total_price] => 0.5
+    [payment_method] => Cash
+    [basket_items] => [{"id":2,"name":"halloumi","price":0.5,"image":"../images/milkbar-menu/halloumi-sandwich.jpg","quantity":1}]
+)
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Mark Order Status Called
+Array
+(
+    [order_id] => 11
+    [status] => received
+)
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Mark Order Status Called
+Array
+(
+    [order_id] => 11
+    [status] => delivered
+)
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called
+Fetch Orders Called

@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JU-Delivery</title>
+  <link rel="icon" href="../images/logo.png">
+  <!-- fonts -->
+  <script src="https://kit.fontawesome.com/257e1e7ee4.js" crossorigin="anonymous"></script>
+
+
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- css -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="a3mal">
+  <div class="main-bg">
+  <header>
+    <div class="container ">
+      <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../restaurants.html">
+            <img src="../images/delivery-man.png" width="70px" alt="">
+          </a>
+          <h4 class="special-header "> JU-Delivery</h4>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+               <li class="nav-item">
+                <a class="nav-link ms-auto d-flex mt-2" href="../BasketPage.html"><i class="fa-solid fa-cart-shopping"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="menus main-section pb-4"> 
+    <h3 class="text-center fw-bold p-4 text-light"> Choose the category</h3>
+
+    <form class="m-auto  padding100">
+      <ul class="ps-0 list-group">
+
+        <a href="#pizza">
+          <li class="list-group-item mb-3 w-100">Pizza</li>
+        </a>
+       
+
+        <a href="#manakeesh">
+          <li class="list-group-item mb-3 w-100">manakeesh</li>
+        </a>
+
+        <a href="#snacks">
+          <li class="list-group-item mb-3 w-100">Snacks</li>
+        </a>
+
+        <a href="#burger">
+          <li class="list-group-item mb-3 w-100">burger</li>
+        </a>
+      </ul>
+    </form>
+  </section>
+</div>
+  <section class="menus" id="pizza">
+    <h3 class="text-center fw-bold p-4"> Pizza</h3>
+
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-3">
+          <div class="card" style="width: 15rem;">
+            <img src="../images/saj-menu/margrirta.jpeg" class="card-img-top img-fluid" alt="...">
+            <span class="padding-top changing-color d-flex justify-content-between">
+              <p class="card-text ">Margherita</p>
+              <span>1.75</span>
+            </span>
+            <button onclick="addToBasket({ id: 1, name: 'Margherita', price: 1.75, image: '../images/saj-menu/margrirta.jpeg', branch_id: 3 })" class="btn ">Add to Basket</button>
+
+            <!--<button class="btn d-block mt-3" onclick="addToBasket({ id: 1, name: 'Margherita', price: 1.75, image: '../images/saj-menu/margrirta.jpeg' })">
+    Add to basket
+</button>
+-->
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card" style="width: 15rem;">
+            <img src="../images/saj-menu/salami-with-kashkawan.jpg" class="card-img-top img-fluid" alt="...">
+            <span class="padding-top changing-color d-flex justify-content-between">
+              <p class="card-text ">sulami pizza</p>
+              <span>2.00</span>
+            </span>
+            <button onclick="addToBasket({ id: 2, name: 'sulami pizza', price: 2.00, image: '../images/saj-menu/salami-with-kashkawan.jpg', branch_id: 3 })" class="btn ">Add to Basket</button>
+
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card" style="width: 15rem;">
+            <img src="../images/saj-menu/pizza-vegetables.jpg" class="card-img-top img-fluid" alt="...">
+            <span class="padding-top changing-color d-flex justify-content-between">
+              <p class="card-text ">vegetables pizza</p>
+              <span>2.00</span>
+            </span>
+            <button onclick="addToBasket({ id: 3, name: 'vegetables pizza', price: 2.00, image: '../images/saj-menu/pizza-vegetables.jpg', branch_id: 3 })" class="btn ">Add to Basket</button>
+
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card" style="width: 15rem;">
+            <img src="../images/saj-menu/pizza-meat.jpg" class="card-img-top" alt="...">
+            <span class="padding-top changing-color d-flex justify-content-between">
+              <p class="card-text ">meat pizza</p>
+              <span>2.50</span>
+            </span>
+            <button onclick="addToBasket({ id: 4, name: 'meat pizza', price: 2.50, image: '../images/saj-menu/pizza-meat.jpg', branch_id: 3 })" class="btn ">Add to Basket</button>
+
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card" style="width: 15rem;">
+            <img src="../images/saj-menu/pizza-turkey.jpg" class="card-img-top img-fluid" alt="...">
+            <span class="padding-top changing-color d-flex justify-content-between">
+              <p class="card-text ">turkey pizza</p>
+              <span>2.00</span>
+            </span>
+            <button onclick="addToBasket({ id: 5, name: 'turkey pizza', price: 2.00, image: '../images/saj-menu/pizza-turkey.jpg', branch_id: 3 })" class="btn ">Add to Basket</button>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card" style="width: 15rem;">
+            <img src="../images/saj-menu/pizza-chicken-with-cream.jpg" class="card-img-top " alt="...">
+            <span class="padding-top changing-color d-flex justify-content-between">
+              <p class="card-text ">chicken pizza</p>
+              <span>2.50</span>
+            </span>
+            <button onclick="addToBasket({ id: 6, name: 'chicken pizza', price: 2.50, image: '../images/saj-menu/pizza-chicken-with-cream.jpg', branch_id: 3 })" class="btn ">Add to Basket</button>
+
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card" style="width: 15rem;">
+            <img src="../images/saj-menu/supreme-pizza.jpg" class="card-img-top " alt="...">
+            <span class="padding-top changing-color d-flex justify-content-between">
+              <p class="card-text ">supreme pizza</p>
+              <span>2.25</span>
+            </span>
+            <button onclick="addToBasket({ id: 7, name: 'supreme pizza', price: 2.25, image: '../images/saj-menu/supreme-pizza.jpg', branch_id: 3 })" class="btn ">Add to Basket</button>
+
+          </div>
+        </div>
+        
+        <div class="col-md-3">
+          <div class="card" style="width: 15rem;">
+            <img src="../images/saj-menu/pizza-zinger.jpg" class="card-img-top " alt="...">
+            <span class="padding-top changing-color d-flex justify-content-between">
+              <p class="card-text ">zinger pizza</p>
+              <span>2.50</span>
+            </span>
+            <button onclick="addToBasket({ id: 8, name: 'zinger pizza', price: 2.50, image: '../images/saj-menu/pizza-zinger.jpg' , branch_id: 3})" class="btn ">Add to Basket</button>
+
+          </div>
+        </div>
+      
+      </div>
+    </div>
+  </section>
+
+
+  <section class="menus padding100" id="manakeesh">
+    <h3 class="text-center fw-bold p-4"> Manakeesh</h3>
+
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-3">
+          <div class="card" style="width: 15rem;">
+            <img src="../images/saj-menu/mana2eesh.jpg" class="card-img-top img-fluid" alt="...">
+            <span class="padding-top changing-color d-flex justify-content-between">
+              <p class="card-text ">mana2eesh</p>
+              <span>0.75</span>
+            </span>
+            <button onclick="addToBasket({ id: 9, name: 'mana2eesh', price: 0.75, image: '../images/saj-menu/mana2eesh.jpg' , branch_id: 3})" class="btn ">Add to Basket</button>
+
+          </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card" style="width: 15rem;">
+              <img src="../images/saj-menu/mana2eesh-with-cheese.jpg" class="card-img-top " alt="...">
+              <span class="padding-top changing-color d-flex justify-content-between">
+                <p class="card-text ">manakeesh with cheese</p>
+                <span>1.00</span>
+              </span>
+              <button onclick="addToBasket({ id: 10, name: 'manakeesh with cheese', price: 1.00, image: '../images/saj-menu/mana2eesh-with-cheese.jpg', branch_id: 3 })" class="btn ">Add to Basket</button>
+
+              
+            </div>
+          </div>
+        
+        <div class="col-md-3">
+          <div class="card" style="width: 15rem;">
+            <img src="../images/saj-menu/turkey-and-kashkawan.jpg" class="card-img-top img-fluid" alt="...">
+            <span class="padding-top changing-color d-flex justify-content-between">
+              <p class="card-text ">turkey & kashkawan</p>
+              <span>1.75</span>
+            </span>
+            <button onclick="addToBasket({ id: 11, name: 'turkey & kashkawan', price: 1.75, image: '../images/saj-menu/turkey-and-kashkawan.jpg', branch_id: 3 })" class="btn ">Add to Basket</button>
+
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card" style="width: 15rem;">
+            <img src="../images/saj-menu/salami-with-kashkawan.jpg" class="card-img-top " alt="...">
+            <span class="padding-top changing-color d-flex justify-content-between">
+              <p class="card-text ">salami & cheese</p>
+              <span>2.00</span>
+            </span>
+            <button onclick="addToBasket({ id: 12, name: 'salami & cheese', price: 2.00, image: '../images/saj-menu/salami-with-kashkawan.jpg', branch_id: 3 })" class="btn ">Add to Basket</button>
+
+          </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card" style="width: 15rem;">
+              <img src="../images/saj-menu/mix-cheese.jpg" class="card-img-top " alt="...">
+              <span class="padding-top changing-color d-flex justify-content-between">
+                <p class="card-text ">mix cheese</p>
+                <span>2.00</span>
+              </span>
+              <button onclick="addToBasket({ id: 13, name: 'mix cheese', price: 2.00, image: '../images/saj-menu/mix-cheese.jpg', branch_id: 3 })" class="btn ">Add to Basket</button>
+
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="menus padding100" id="snacks">
+    <h3 class="text-center fw-bold p-4"> Snacks</h3>
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+
+        <div class="col-md-3">
+          <div class="card" style="width: 15rem;">
+            <img src="../images/snackway-menu/zinger-way.jpg" class="card-img-top img-fluid" alt="...">
+            <span class="padding-top changing-color d-flex justify-content-between">
+              <p class="card-text ">zinger way</p>
+              <span>2.00</span>
+            </span>
+            <button onclick="addToBasket({ id: 14, name: 'zinger way', price: 2.00, image: '../images/snackway-menu/zinger-way.jpg', branch_id: 3 })" class="btn ">Add to Basket</button>
+
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card" style="width: 15rem;">
+            <img src="../images/snackway-menu/corden-blue.jpg" class="card-img-top img-fluid" alt="...">
+            <span class="padding-top changing-color d-flex justify-content-between">
+              <p class="card-text ">corden blue</p>
+              <span>2.00</span>
+            </span>
+            <button onclick="addToBasket({ id: 15, name: 'corden blue', price: 2.00, image: '../images/snackway-menu/corden-blue.jpg', branch_id: 3 })" class="btn ">Add to Basket</button>
+
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card" style="width: 15rem;">
+            <img src="../images/snackway-menu/fahita.jpg" class="card-img-top img-fluid" alt="...">
+            <span class="padding-top changing-color d-flex justify-content-between">
+              <p class="card-text ">fahita</p>
+              <span>2.00</span>
+            </span>
+            <button onclick="addToBasket({ id: 1, name: 'fahita', price: 0.90, image: '../images/milkbar-menu/fahita.jpg', branch_id: 3 })" class="btn">Add to Basket</button>
+            <!----
+            <button class="btn add-to-basket" 
+              data-id="1" 
+              data-name="fahita" 
+              data-price="0.90" 
+              data-image="../images/milkbar-menu/fahita.jpg">
+              Add to Basket
+            </button>-->
+      
+          </div>
+        </div>       
+
+        <div class="col-md-3">
+          <div class="card" style="width: 15rem;">
+            <img src="../images/snackway-menu/italian-chiken.jpg" class="card-img-top img-fluid" alt="...">
+            <span class="padding-top changing-color d-flex justify-content-between">
+              <p class="card-text ">corden blue</p>
+              <span>2.00</span>
+            </span>
+            <button onclick="addToBasket({ id: 17, name: 'corden blue', price: 2.00, image: '../images/snackway-menu/italian-chiken.jpg', branch_id: 3  })" class="btn ">Add to Basket</button>
+
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card" style="width: 15rem;">
+            <img src="../images/saj-menu/potato-sandwich.jpeg" class="card-img-top img-fluid" alt="...">
+            <span class="padding-top changing-color d-flex justify-content-between">
+              <p class="card-text ">potato sandwich</p>
+              <span>1.50</span>
+            </span>
+            <button onclick="addToBasket({ id: 18, name: 'potato sandwich', price: 1.50, image: '../images/saj-menu/potato-sandwich.jpeg', branch_id: 3  })" class="btn ">Add to Basket</button>
+
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card" style="width: 15rem;">
+            <img src="../images/saj-menu/italian-chiken.jpg" class="card-img-top img-fluid" alt="...">
+            <span class="padding-top changing-color d-flex justify-content-between">
+              <p class="card-text ">italian chicken</p>
+              <span>2.00</span>
+            </span>
+            <button onclick="addToBasket({ id: 19, name: 'italian chicken', price: 2.00, image: '../images/saj-menu/italian-chiken.jpg', branch_id: 3  })" class="btn ">Add to Basket</button>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="menus" id="burger">
+    <h3 class="text-center fw-bold p-4"> Burger</h3>
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+
+        <div class="col-md-3">
+          <div class="card" style="width: 15rem;">
+            <img src="../images/saj-menu/meat-burger.jpg" class="card-img-top img-fluid" alt="...">
+            <span class="padding-top changing-color d-flex justify-content-between">
+              <p class="card-text ">meat burger</p>
+              <span>2.00</span>
+            </span>
+            <button onclick="addToBasket({ id: 20, name: 'meat burger', price: 2.00, image: '../images/saj-menu/meat-burger.jpg', branch_id: 3  })" class="btn ">Add to Basket</button>
+
+          </div>
+        </div>
+
+       
+        <div class="col-md-3">
+          <div class="card" style="width: 15rem;">
+            <img src="../images/saj-menu/crispy-chicken-burger.jpg" class="card-img-top img-fluid" alt="...">
+            <span class="padding-top changing-color d-flex justify-content-between">
+              <p class="card-text ">chicken burger</p>
+              <span>2.00</span>
+            </span>
+            <button onclick="addToBasket({ id: 21, name: 'chicken burger', price: 2.00, image: '../images/saj-menu/crispy-chicken-burger.jpg', branch_id: 3 })" class="btn ">Add to Basket</button>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+ 
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/257e1e7ee4.js" crossorigin="anonymous"></script>
+
+  <script>
+    // Add to Basket function
+    function addToBasket(item) {
+        // Fetch existing basket or initialize an empty array
+        const basket = JSON.parse(localStorage.getItem("basket")) || [];
+
+        // Check if the item already exists in the basket
+        const existingItem = basket.find(b => b.id === item.id);
+
+        if (existingItem) {
+            // If the item exists, increase its quantity
+            existingItem.quantity += 1;
+        } else {
+            // If the item is new, set its initial quantity to 1 and add it to the basket
+            item.quantity = 1;
+            basket.push(item);
+        }
+
+        // Save the updated basket back to localStorage
+        localStorage.setItem("basket", JSON.stringify(basket));
+
+        // Show a confirmation alert
+        alert(`${item.name} has been added to your basket!`);
+    }
+</script>
+
+      <!--Scrool to up bottom-->
+      <a href="#" class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+      </a>
+
+<!--
+<script>
+  document.querySelectorAll('.add-to-basket').forEach(button => {
+      button.addEventListener('click', function () {
+          const item = {
+              id: parseInt(this.dataset.id),
+              name: this.dataset.name,
+              price: parseFloat(this.dataset.price),
+              image: this.dataset.image
+          };
+  
+          // Fetch existing basket or initialize an empty array
+          const basket = JSON.parse(localStorage.getItem("basket")) || [];
+  
+          // Check if the item already exists in the basket
+          const existingItem = basket.find(b => b.id === item.id);
+  
+          if (existingItem) {
+              // If the item exists, increase its quantity
+              existingItem.quantity += 1;
+          } else {
+              // If the item is new, set its initial quantity to 1 and add it to the basket
+              item.quantity = 1;
+              basket.push(item);
+          }
+  
+          // Save the updated basket back to localStorage
+          localStorage.setItem("basket", JSON.stringify(basket));
+  
+          // Show a confirmation alert
+          alert(`${item.name} has been added to your basket!`);
+      });
+  });
+  </script>-->
+  
+
+</body>
+
+</html>

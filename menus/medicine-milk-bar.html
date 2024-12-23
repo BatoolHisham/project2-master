@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JU-Delivery</title>
+  <link rel="icon" href="../images/logo.png">
+  <!-- fonts -->
+
+
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- css -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="medicine-milkbar">
+  <div class="main-bg">
+  <header>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../restaurants.html">
+            <img src="../images/delivery-man.png" width="70px" alt="">
+          </a>
+          <h4 class="special-header"> JU-Delivery</h4>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+              <li class="nav-item">
+                <a class="nav-link ms-auto d-flex mt-2" href="../BasketPage.html"><i class="fa-solid fa-cart-shopping"></i></a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+             </li>
+           </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="menus main-section padding50"> 
+    <h3 class="text-center fw-bold p-4 text-light"> Choose the category</h3>
+
+    <form class="m-auto padding100">
+      <ul class="ps-0 list-group">
+        <a href="#sandwiches">
+          <li class="list-group-item mb-3 w-100">Sandwiches</li>
+        </a>
+
+        <a href="#drinks">
+          <li class="list-group-item mb-3 w-100">Drinks</li>
+        </a>
+
+        <a href="#sweets">
+          <li class="list-group-item w-100">Sweets</li>
+        </a>
+      </ul>
+    </form>
+  </section>
+  </div>
+
+  <section class="menus" id="sandwiches">
+    <h3 class="text-center fw-bold p-4"> Sandwiches</h3>
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-3">
+          <div class="card" style="width: 15rem;">
+            <img src="../images/milkbar-menu/fahita.jpg" class="card-img-top img-fluid" alt="...">
+            <span class="padding-top changing-color d-flex justify-content-between">
+              <p class="card-text ">fahita</p>
+              <span>0.90</span>
+            </span>
+            <button onclick="addToBasket({ id: 1, name: 'fahita', price: 0.90, image: '../images/milkbar-menu/fahita.jpg' })" class="btn ">Add to Basket</button>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card" style="width: 15rem;">
+            <img src="../images/milkbar-menu/halloumi-sandwich.jpg" class="card-img-top img-fluid" alt="...">
+            <span class="padding-top changing-color d-flex justify-content-between">
+              <p class="card-text ">halloumi</p>
+              <span>0.50</span>
+            </span>
+            <button onclick="addToBasket({ id: 2, name: 'halloumi', price: 0.50, image: '../images/milkbar-menu/halloumi-sandwich.jpg' })" class="btn ">Add to Basket</button>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card" style="width: 15rem;">
+            <img src="../images/milkbar-menu/kashkawan.jpg" class="card-img-top img-fluid" alt="...">
+            <span class="padding-top changing-color d-flex justify-content-between">
+              <p class="card-text ">kashkawan</p>
+              <span>0.50</span>
+            </span>
+            <button onclick="addToBasket({ id: 3, name: 'kashkawan', price: 0.50, image: '../images/milkbar-menu/kashkawan.jpg' })" class="btn ">Add to Basket</button>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card" style="width: 15rem;">
+            <img src="../images/milkbar-menu/yellow-cheese.jpeg" class="card-img-top" alt="...">
+            <span class="padding-top changing-color d-flex justify-content-between">
+              <p class="card-text ">yellow cheese</p>
+              <span>0.50</span>
+            </span>
+            <button onclick="addToBasket({ id: 4, name: 'yellow cheese', price: 0.50, image: '../images/milkbar-menu/yellow-cheese.jpeg' })" class="btn ">Add to Basket</button>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card" style="width: 15rem;">
+            <img src="../images/milkbar-menu/labneh.webp" class="card-img-top img-fluid" alt="...">
+            <span class="padding-top changing-color d-flex justify-content-between">
+              <p class="card-text ">labneh</p>
+              <span>0.40</span>
+            </span>
+            <button onclick="addToBasket({ id: 5, name: 'labneh', price: 0.40, image: '../images/milkbar-menu/labneh.webp' })" class="btn ">Add to Basket</button>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card" style="width: 15rem;">
+            <img src="../images/milkbar-menu/senioreh2.jpeg  " class="card-img-top " alt="...">
+            <span class="padding-top changing-color d-flex justify-content-between">
+              <p class="card-text ">labneh + senioreh</p>
+              <span>0.50</span>
+            </span>
+            <button onclick="addToBasket({ id: 6, name: 'labneh + senioreh', price: 0.50, image: '../images/milkbar-menu/senioreh2.jpeg ' })" class="btn ">Add to Basket</button>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card" style="width: 15rem;">
+            <img src="../images/milkbar-menu/turkey.jpg" class="card-img-top " alt="...">
+            <span class="padding-top changing-color d-flex justify-content-between">
+              <p class="card-text ">turkey</p>
+              <span>0.80</span>
+            </span>
+            <button onclick="addToBasket({ id: 7, name: 'turkey', price: 0.80, image: '../images/milkbar-menu/turkey.jpg' })" class="btn ">Add to Basket</button>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card" style="width: 15rem;">
+            <img src="../images/milkbar-menu/turkey-grill.jpeg" class="card-img-top " alt="...">
+            <span class="padding-top changing-color d-flex justify-content-between">
+              <p class="card-text ">turkey grill</p>
+              <span>1.00</span>
+            </span>
+            <button onclick="addToBasket({ id: 8, name: 'turkey grill', price: 1.00, image: '../images/milkbar-menu/turkey-grill.jpeg' })" class="btn ">Add to Basket</button>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card" style="width: 15rem;">
+            <img src="../images/milkbar-menu/shawerma.jpg" class="card-img-top" alt="...">
+            <span class="padding-top changing-color d-flex justify-content-between">
+              <p class="card-text ">shawarma small</p>
+              <span>0.50</span>
+            </span>
+            <button onclick="addToBasket({ id: 9, name: 'shawarma small', price: 0.50, image: '../images/milkbar-menu/shawerma.jpg' })" class="btn ">Add to Basket</button>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card" style="width: 15rem;">
+            <img src="../images/milkbar-menu/shawerma.jpg" class="card-img-top" alt="...">
+            <span class="padding-top changing-color d-flex justify-content-between">
+              <p class="card-text ">shawarma super</p>
+              <span>1.00</span>
+            </span>
+            <button onclick="addToBasket({ id: 10, name: 'shawarma super', price: 1.00, image: '../images/milkbar-menu/shawerma.jpg' })" class="btn ">Add to Basket</button>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card" style="width: 15rem;">
+            <img src="../images/milkbar-menu/shawarma-meal.webp" class="card-img-top" alt="...">
+            <span class="padding-top changing-color d-flex justify-content-between">
+              <p class="card-text ">shawarma meal</p>
+              <span>2.00</span>
+            </span>
+            <button onclick="addToBasket({ id: 11, name: 'shawarma meal', price: 2.00, image: '../images/milkbar-menu/shawarma-meal.webp' })" class="btn ">Add to Basket</button>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card" style="width: 15rem;">
+            <img src="../images/milkbar-menu/scaollop.jpg" class="card-img-top" alt="...">
+            <span class="padding-top changing-color d-flex justify-content-between">
+              <p class="card-text ">scaollop</p>
+              <span>0.60</span>
+            </span>
+            <button onclick="addToBasket({ id: 12, name: 'scaollop', price: 0.60, image: '../images/milkbar-menu/scaollop.jpg' })" class="btn ">Add to Basket</button>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card" style="width: 15rem;">
+            <img src="../images/milkbar-menu/margrirta.jpeg" class="card-img-top" alt="...">
+            <span class="padding-top changing-color d-flex justify-content-between">
+              <p class="card-text ">Margherita</p>
+              <span>0.45</span>
+            </span>
+            <button onclick="addToBasket({ id: 13, name: 'Margherita', price: 0.45, image: '../images/milkbar-menu/margrirta.jpeg' })" class="btn ">Add to Basket</button>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card" style="width: 15rem;">
+            <img src="../images/milkbar-menu/vegetables-pizza.gif" class="card-img-top" alt="...">
+            <span class="padding-top changing-color d-flex justify-content-between">
+              <p class="card-text ">Vegetables Pizza</p>
+              <span>0.60</span>
+            </span>
+            <button onclick="addToBasket({ id: 14, name: 'Vegetables Pizza', price: 0.60, image: '../images/milkbar-menu/vegetables-pizza.gif' })" class="btn ">Add to Basket</button>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card" style="width: 15rem;">
+            <img src="../images/milkbar-menu/potato.jpeg" class="card-img-top" alt="...">
+            <span class="padding-top changing-color d-flex justify-content-between">
+              <p class="card-text ">potato</p>
+              <span>0.75</span>
+            </span>
+            <button onclick="addToBasket({ id: 15, name: 'potato', price: 0.75, image: '../images/milkbar-menu/potato.jpeg' })" class="btn ">Add to Basket</button>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card" style="width: 15rem;">
+            <img src="../images/milkbar-menu/potato-sandwich.jpeg" class="card-img-top" alt="...">
+            <span class="padding-top changing-color d-flex justify-content-between">
+              <p class="card-text ">potato Sandwich</p>
+              <span>0.40</span>
+            </span>
+            <button onclick="addToBasket({ id: 16, name: 'potato Sandwich', price: 0.40, image: '../images/milkbar-menu/potato-sandwich.jpeg' })" class="btn ">Add to Basket</button>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card" style="width: 15rem;">
+            <img src="../images/milkbar-menu/potato-with-cheese.jpg" class="card-img-top" alt="...">
+            <span class="padding-top changing-color d-flex justify-content-between">
+              <p class="card-text ">potato with cheese</p>
+              <span>0.75</span>
+            </span>
+            <button onclick="addToBasket({ id: 17, name: 'potato with cheese', price: 0.75, image: '../images/milkbar-menu/potato-with-cheese.jpg' })" class="btn ">Add to Basket</button>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card" style="width: 15rem;">
+            <img src="../images/milkbar-menu/zinger.jpeg" class="card-img-top" alt="...">
+            <span class="padding-top changing-color d-flex justify-content-between">
+              <p class="card-text ">zinger</p>
+              <span>1.40</span>
+            </span>
+            <button onclick="addToBasket({ id: 18, name: 'zinger', price: 1.40, image: '../images/milkbar-menu/zinger.jpeg' })" class="btn ">Add to Basket</button>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card" style="width: 15rem;">
+            <img src="../images/milkbar-menu/zinger-with-cheese.jpeg" class="card-img-top" alt="...">
+            <span class="padding-top changing-color d-flex justify-content-between">
+              <p class="card-text ">zinger with cheese</p>
+              <span>1.60</span>
+            </span>
+            <button onclick="addToBasket({ id: 19, name: 'zinger with cheese', price: 1.60, image: '../images/milkbar-menu/zinger-with-cheese.jpeg' })" class="btn ">Add to Basket</button>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <section class="menus padding100" id="drinks">
+    <h3 class="text-center fw-bold p-4">Drinks</h3>
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+
+        <div class="col-md-3">
+          <div class="card" style="width: 15rem;">
+            <img src="../images/milkbar-menu//barbican.png" class="card-img-top img-fluid" alt="...">
+            <span class="padding-top changing-color d-flex justify-content-between">
+              <p class="card-text ">barbican</p>
+              <span>0.65</span>
+            </span>
+            <a href="#" class="btn  d-block mt-3">Add to basket</a>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card" style="width: 15rem;">
+            <img src="../images/milkbar-menu//barbican-cans.png" class="card-img-top img-fluid" alt="...">
+            <span class="padding-top changing-color d-flex justify-content-between">
+              <p class="card-text ">barbican cans</p>
+              <span>0.50</span>
+            </span>
+            <a href="#" class="btn  d-block mt-3">Add to basket</a>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card" style="width: 15rem;">
+            <img src="../images/milkbar-menu/rani.png" class="card-img-top img-fluid" alt="...">
+            <span class="padding-top changing-color d-flex justify-content-between">
+              <p class="card-text ">rani</p>
+              <span>0.50</span>
+            </span>
+            <a href="#" class="btn  d-block mt-3">Add to basket</a>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card" style="width: 15rem;">
+            <img src="../images/milkbar-menu/matrics.jpg" class="card-img-top img-fluid" alt="...">
+            <span class="padding-top changing-color d-flex justify-content-between">
+              <p class="card-text ">matrics</p>
+              <span>0.35</span>
+            </span>
+            <a href="#" class="btn  d-block mt-3">Add to basket</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="menus" id="sweets">
+    <h3 class="text-center fw-bold p-4"> Sweets</h3>
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+
+        <div class="col-md-3">
+          <div class="card" style="width: 15rem;">
+            <img src="../images/milkbar-menu/canary-chocolate.jpg" class="card-img-top img-fluid" alt="...">
+            <span class="padding-top changing-color d-flex justify-content-between">
+              <p class="card-text ">canary chocolate</p>
+              <span>0.25</span>
+            </span>
+            <a href="#" class="btn  d-block mt-3">Add to basket</a>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card" style="width: 15rem;">
+            <img src="../images/milkbar-menu/chipseco.png" class="card-img-top img-fluid" alt="...">
+            <span class="padding-top changing-color d-flex justify-content-between">
+              <p class="card-text ">chipseco</p>
+              <span>0.50</span>
+            </span>
+            <a href="#" class="btn  d-block mt-3">Add to basket</a>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card" style="width: 15rem;">
+            <img src="../images/milkbar-menu/sunbites.jpg" class="card-img-top img-fluid" alt="...">
+            <span class="padding-top changing-color d-flex justify-content-between">
+              <p class="card-text ">sunbite</p>
+              <span>0.50</span>
+            </span>
+            <a href="#" class="btn  d-block mt-3">Add to basket</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/257e1e7ee4.js" crossorigin="anonymous"></script>
+
+  <script>
+    // Add to Basket function
+    function addToBasket(item) {
+        // Fetch existing basket or initialize an empty array
+        const basket = JSON.parse(localStorage.getItem("basket")) || [];
+
+        // Check if the item already exists in the basket
+        const existingItem = basket.find(b => b.id === item.id);
+
+        if (existingItem) {
+            // If the item exists, increase its quantity
+            existingItem.quantity += 1;
+        } else {
+            // If the item is new, set its initial quantity to 1 and add it to the basket
+            item.quantity = 1;
+            basket.push(item);
+        }
+
+        // Save the updated basket back to localStorage
+        localStorage.setItem("basket", JSON.stringify(basket));
+
+        // Show a confirmation alert
+        alert(`${item.name} has been added to your basket!`);
+    }
+</script>
+        
+        <!--Scrool to up bottom-->
+        <a href="#" class="scroll-to-top">
+          <i class="fas fa-arrow-up"></i>
+        </a>
+
+</body>
+
+</html>

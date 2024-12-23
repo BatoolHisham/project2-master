@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JU-Delivery</title>
+    <link rel="icon" href="../images/logo.png">
+
+      <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../style.css">
+
+</head>
+<body>
+    <style>
+        .blurred {
+    filter: blur(4px);
+    opacity: 0.6;
+}
+    </style>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#main">
+                        <img src="../images/logo-1.png" width="70px" alt="">
+                    </a>
+                    <h4 class="special-header">JU-Delivery</h4>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active pt-3" aria-current="page" href="../login.html">Log out</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ms-auto d-flex" href="../profilepage.php"><img id="header-profile-image"
+                                        width="40px" src="../images/profile logo.png" /></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="menusSYS main-section padding50"> 
+        <h3 class="text-center fw-bold p-4">medicine milk bar</h3>
+        <h3 class="text-center fw-bold p-4"> Choose the category</h3>
+    
+        <form class="m-auto padding100">
+          <ul class="ps-0 list-group">
+            <a href="#sandwiches">
+              <li class="list-group-item mb-3 w-100">Sandwiches</li>
+            </a>
+    
+            <a href="#drinks">
+              <li class="list-group-item mb-3 w-100">Drinks</li>
+            </a>
+    
+            <a href="#sweets">
+              <li class="list-group-item w-100">Sweets</li>
+            </a>
+          </ul>
+        </form>
+      </section>
+      
+    <section class="menusSYS" id="sandwiches">
+        <h3 class="text-center fw-bold p-4"> Sandwiches</h3>
+        <div class="container">
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-3">
+                <div class="card" style="width: 15rem;">
+                    <!-- Dish Image -->
+                    <img src="../images/milkbar-menu/fahita.jpg" class="card-img-top img-fluid dish-image" alt="fahita">
+                    
+                    <!-- Dish Name and Price -->
+                    <div class="padding-top changing-color d-flex justify-content-between">
+                        <p class="card-text">fahita</p>
+                        <span class="dish-price">0.50 JD</span>
+                    </div>
+                
+                    <!-- Buttons -->
+                    <div class="d-grid gap-2">
+                        <!-- Toggle Stock -->
+                        <button class="btn btn-success"
+                            onclick="toggleStockStatus(this, 'fahita', this.closest('.card').querySelector('.dish-image'))">
+                            Mark as Out of Stock
+                        </button>
+                
+                        <!-- Change Image -->
+                        <button class="btn btn-primary"
+                            onclick="changeDishImage('fahita', this.closest('.card').querySelector('.dish-image'))">
+                            Change Image
+                        </button>
+                
+                        <!-- Change Price -->
+                        <button class="btn btn-warning text-dark"
+                            onclick="changeDishPrice('fahita', this.closest('.card').querySelector('.dish-price'))">
+                            Change Price
+                        </button>
+                
+                        <!-- Delete Dish -->
+                        <button class="btn btn-danger"
+                            onclick="confirmDelete(this.closest('.card'), 'fahita')">
+                            Delete
+                        </button>
+                    </div>
+                </div>
+            </div>                
+            
+    
+            <div class="col-md-3">
+                <div class="card" style="width: 15rem;">
+                    <img src="../images/milkbar-menu/halloumi-sandwich.jpg" class="card-img-top img-fluid dish-image" alt="halloumi">
+                    
+                    <div class="padding-top changing-color d-flex justify-content-between">
+                        <p class="card-text ">halloumi</p>
+                        <span class="dish-price">0.50</span>
+                    </div>
+                    
+                    <div class="d-grid gap-2">
+                        <!-- Toggle Stock -->
+                        <button class="btn btn-success"
+                            onclick="toggleStockStatus(this, 'halloumi', this.closest('.card').querySelector('.dish-image'))">
+                            Mark as Out of Stock
+                        </button>
+                
+                        <!-- Change Image -->
+                        <button class="btn btn-primary"
+                            onclick="changeDishImage('halloumi', this.closest('.card').querySelector('.dish-image'))">
+                            Change Image
+                        </button>
+                
+                        <!-- Change Price -->
+                        <button class="btn btn-warning text-dark"
+                            onclick="changeDishPrice('halloumi', this.closest('.card').querySelector('.dish-price'))">
+                            Change Price
+                        </button>
+                
+                        <!-- Delete Dish -->
+                        <button class="btn btn-danger"
+                            onclick="confirmDelete(this.closest('.card'), 'halloumi')">
+                            Delete
+                        </button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-md-3">
+              <div class="card" style="width: 15rem;">
+                <img src="../images/milkbar-menu/kashkawan.jpg" class="card-img-top img-fluid dish-image" alt="kashkawan">
+                <span class="padding-top changing-color d-flex justify-content-between">
+                  <p class="card-text ">kashkawan</p>
+                  <span class="dish-price">0.50</span>
+                </span>
+                <div class="d-grid gap-2">
+                    <!-- Toggle Stock -->
+                    <button class="btn btn-success"
+                        onclick="toggleStockStatus(this, 'kashkawan', this.closest('.card').querySelector('.dish-image'))">
+                        Mark as Out of Stock
+                    </button>
+            
+                    <!-- Change Image -->
+                    <button class="btn btn-primary"
+                        onclick="changeDishImage('kashkawan', this.closest('.card').querySelector('.dish-image'))">
+                        Change Image
+                    </button>
+            
+                    <!-- Change Price -->
+                    <button class="btn btn-warning text-dark"
+                        onclick="changeDishPrice('kashkawan', this.closest('.card').querySelector('.dish-price'))">
+                        Change Price
+                    </button>
+            
+                    <!-- Delete Dish -->
+                    <button class="btn btn-danger"
+                        onclick="confirmDelete(this.closest('.card'), 'kashkawan')">
+                        Delete
+                    </button>
+                </div>            
+            </div>
+            </div>
+    
+            <div class="col-md-3">
+              <div class="card" style="width: 15rem;">
+                <img src="../images/milkbar-menu/yellow-cheese.jpeg" class="card-img-top dish-image" alt="yellow cheese">
+                <span class="padding-top changing-color d-flex justify-content-between">
+                  <p class="card-text ">yellow cheese</p>
+                  <span class="dish-price">0.50</span>
+                </span>
+                <div class="d-grid gap-2">
+                    <!-- Toggle Stock -->
+                    <button class="btn btn-success"
+                        onclick="toggleStockStatus(this, 'yellow cheese', this.closest('.card').querySelector('.dish-image'))">
+                        Mark as Out of Stock
+                    </button>
+            
+                    <!-- Change Image -->
+                    <button class="btn btn-primary"
+                        onclick="changeDishImage('yellow cheese', this.closest('.card').querySelector('.dish-image'))">
+                        Change Image
+                    </button>
+            
+                    <!-- Change Price -->
+                    <button class="btn btn-warning text-dark"
+                        onclick="changeDishPrice('yellow cheese', this.closest('.card').querySelector('.dish-price'))">
+                        Change Price
+                    </button>
+            
+                    <!-- Delete Dish -->
+                    <button class="btn btn-danger"
+                        onclick="confirmDelete(this.closest('.card'), 'kashkawan')">
+                        Delete
+                    </button>
+                </div>             
+            </div>
+            </div>
+    
+            <div class="col-md-3">
+              <div class="card" style="width: 15rem;">
+                <img src="../images/milkbar-menu/labneh.webp" class="card-img-top img-fluid dish-image" alt="labneh">
+                <span class="padding-top changing-color d-flex justify-content-between">
+                  <p class="card-text ">labneh</p>
+                  <span class="dish-price">0.40</span>
+                </span>
+                <div class="d-grid gap-2">
+                    <!-- Toggle Stock -->
+                    <button class="btn btn-success"
+                        onclick="toggleStockStatus(this, 'labneh', this.closest('.card').querySelector('.dish-image'))">
+                        Mark as Out of Stock
+                    </button>
+            
+                    <!-- Change Image -->
+                    <button class="btn btn-primary"
+                        onclick="changeDishImage('labneh', this.closest('.card').querySelector('.dish-image'))">
+                        Change Image
+                    </button>
+            
+                    <!-- Change Price -->
+                    <button class="btn btn-warning text-dark"
+                        onclick="changeDishPrice('labneh', this.closest('.card').querySelector('.dish-price'))">
+                        Change Price
+                    </button>
+            
+                    <!-- Delete Dish -->
+                    <button class="btn btn-danger"
+                        onclick="confirmDelete(this.closest('.card'), 'labneh')">
+                        Delete
+                    </button>
+                </div>
+            </div>
+            </div>
+    
+            <div class="col-md-3">
+              <div class="card" style="width: 15rem;">
+                <img src="../images/milkbar-menu/senioreh2.jpeg  " class="card-img-top dish-image" alt="labneh + senioreh">
+                <span class="padding-top changing-color d-flex justify-content-between">
+                  <p class="card-text ">labneh + senioreh</p>
+                  <span class="dish-price">0.50</span>
+                </span>
+                <div class="d-grid gap-2">
+                    <!-- Toggle Stock -->
+                    <button class="btn btn-success"
+                        onclick="toggleStockStatus(this, 'labneh + senioreh', this.closest('.card').querySelector('.dish-image'))">
+                        Mark as Out of Stock
+                    </button>
+            
+                    <!-- Change Image -->
+                    <button class="btn btn-primary"
+                        onclick="changeDishImage('labneh + senioreh', this.closest('.card').querySelector('.dish-image'))">
+                        Change Image
+                    </button>
+            
+                    <!-- Change Price -->
+                    <button class="btn btn-warning text-dark"
+                        onclick="changeDishPrice('labneh + senioreh', this.closest('.card').querySelector('.dish-price'))">
+                        Change Price
+                    </button>
+            
+                    <!-- Delete Dish -->
+                    <button class="btn btn-danger"
+                        onclick="confirmDelete(this.closest('.card'), 'labneh + senioreh')">
+                        Delete
+                    </button>
+                </div>              </div>
+            </div>
+    
+            <div class="col-md-3">
+              <div class="card" style="width: 15rem;">
+                <img src="../images/milkbar-menu/turkey.jpg" class="card-img-top dish-image" alt="...">
+                <span class="padding-top changing-color d-flex justify-content-between">
+                  <p class="card-text ">turkey</p>
+                  <span class="dish-price">0.80</span>
+                </span>
+                <div class="d-grid gap-2">
+                    <!-- Toggle Stock -->
+                    <button class="btn btn-success"
+                        onclick="toggleStockStatus(this, 'turkey', this.closest('.card').querySelector('.dish-image'))">
+                        Mark as Out of Stock
+                    </button>
+            
+                    <!-- Change Image -->
+                    <button class="btn btn-primary"
+                        onclick="changeDishImage('turkey', this.closest('.card').querySelector('.dish-image'))">
+                        Change Image
+                    </button>
+            
+                    <!-- Change Price -->
+                    <button class="btn btn-warning text-dark"
+                        onclick="changeDishPrice('turkey', this.closest('.card').querySelector('.dish-price'))">
+                        Change Price
+                    </button>
+            
+                    <!-- Delete Dish -->
+                    <button class="btn btn-danger"
+                        onclick="confirmDelete(this.closest('.card'), 'turkey')">
+                        Delete
+                    </button>
+                </div>
+            </div>
+        </div>
+    
+            <div class="col-md-3">
+              <div class="card" style="width: 15rem;">
+                <img src="../images/milkbar-menu/turkey-grill.jpeg" class="card-img-top dish-image" alt="...">
+                <span class="padding-top changing-color d-flex justify-content-between">
+                  <p class="card-text ">turkey grill</p>
+                  <span class="dish-price">1.00</span>
+                </span>
+                <div class="d-grid gap-2">
+                    <!-- Toggle Stock -->
+                    <button class="btn btn-success"
+                        onclick="toggleStockStatus(this, 'turkey grill', this.closest('.card').querySelector('.dish-image'))">
+                        Mark as Out of Stock
+                    </button>
+            
+                    <!-- Change Image -->
+                    <button class="btn btn-primary"
+                        onclick="changeDishImage('turkey grill', this.closest('.card').querySelector('.dish-image'))">
+                        Change Image
+                    </button>
+            
+                    <!-- Change Price -->
+                    <button class="btn btn-warning text-dark"
+                        onclick="changeDishPrice('turkey grill', this.closest('.card').querySelector('.dish-price'))">
+                        Change Price
+                    </button>
+            
+                    <!-- Delete Dish -->
+                    <button class="btn btn-danger"
+                        onclick="confirmDelete(this.closest('.card'), 'turkey grill')">
+                        Delete
+                    </button>
+                </div>              </div>
+            </div>
+    
+            <div class="col-md-3">
+              <div class="card" style="width: 15rem;">
+                <img src="../images/milkbar-menu/shawerma.jpg" class="card-img-top dish-image" alt="...">
+                <span class="padding-top changing-color d-flex justify-content-between">
+                  <p class="card-text ">shawarma small</p>
+                  <span class="dish-price">0.50</span>
+                </span>
+                <div class="d-grid gap-2">
+                    <!-- Toggle Stock -->
+                    <button class="btn btn-success"
+                        onclick="toggleStockStatus(this, 'shawarma small', this.closest('.card').querySelector('.dish-image'))">
+                        Mark as Out of Stock
+                    </button>
+            
+                    <!-- Change Image -->
+                    <button class="btn btn-primary"
+                        onclick="changeDishImage('shawarma small', this.closest('.card').querySelector('.dish-image'))">
+                        Change Image
+                    </button>
+            
+                    <!-- Change Price -->
+                    <button class="btn btn-warning text-dark"
+                        onclick="changeDishPrice('shawarma small', this.closest('.card').querySelector('.dish-price'))">
+                        Change Price
+                    </button>
+            
+                    <!-- Delete Dish -->
+                    <button class="btn btn-danger"
+                        onclick="confirmDelete(this.closest('.card'), 'shawarma small')">
+                        Delete
+                    </button>
+                </div>
+            </div>
+        </div>
+    
+            <div class="col-md-3">
+              <div class="card" style="width: 15rem;">
+                <img src="../images/milkbar-menu/shawerma.jpg" class="card-img-top dish-image" alt="...">
+                <span class="padding-top changing-color d-flex justify-content-between">
+                  <p class="card-text ">shawarma super</p>
+                  <span class="dish-price">1.00</span>
+                </span>
+                <div class="d-grid gap-2">
+                    <!-- Toggle Stock -->
+                    <button class="btn btn-success"
+                        onclick="toggleStockStatus(this, 'shawarma super', this.closest('.card').querySelector('.dish-image'))">
+                        Mark as Out of Stock
+                    </button>
+            
+                    <!-- Change Image -->
+                    <button class="btn btn-primary"
+                        onclick="changeDishImage('shawarma super', this.closest('.card').querySelector('.dish-image'))">
+                        Change Image
+                    </button>
+            
+                    <!-- Change Price -->
+                    <button class="btn btn-warning text-dark"
+                        onclick="changeDishPrice('shawarma super', this.closest('.card').querySelector('.dish-price'))">
+                        Change Price
+                    </button>
+            
+                    <!-- Delete Dish -->
+                    <button class="btn btn-danger"
+                        onclick="confirmDelete(this.closest('.card'), 'shawarma super')">
+                        Delete
+                    </button>
+                </div>
+            </div>
+        </div>
+    
+            <div class="col-md-3">
+              <div class="card" style="width: 15rem;">
+                <img src="../images/milkbar-menu/shawarma-meal.webp" class="card-img-top dish-image" alt="...">
+                <span class="padding-top changing-color d-flex justify-content-between">
+                  <p class="card-text ">shawarma meal</p>
+                  <span class="dish-price">2.00</span>
+                </span>
+                <div class="d-grid gap-2">
+                    <!-- Toggle Stock -->
+                    <button class="btn btn-success"
+                        onclick="toggleStockStatus(this, 'shawarma meal', this.closest('.card').querySelector('.dish-image'))">
+                        Mark as Out of Stock
+                    </button>
+            
+                    <!-- Change Image -->
+                    <button class="btn btn-primary"
+                        onclick="changeDishImage('shawarma meal', this.closest('.card').querySelector('.dish-image'))">
+                        Change Image
+                    </button>
+            
+                    <!-- Change Price -->
+                    <button class="btn btn-warning text-dark"
+                        onclick="changeDishPrice('shawarma meal', this.closest('.card').querySelector('.dish-price'))">
+                        Change Price
+                    </button>
+            
+                    <!-- Delete Dish -->
+                    <button class="btn btn-danger"
+                        onclick="confirmDelete(this.closest('.card'), 'shawarma meal')">
+                        Delete
+                    </button>
+                </div>              
+            </div>
+            </div>
+    
+            <div class="col-md-3">
+              <div class="card" style="width: 15rem;">
+                <img src="../images/milkbar-menu/scaollop.jpg" class="card-img-top dish-image" alt="...">
+                <span class="padding-top changing-color d-flex justify-content-between">
+                  <p class="card-text ">scaollop</p>
+                  <span class="dish-price">0.60</span>
+                </span>
+                <div class="d-grid gap-2">
+                    <!-- Toggle Stock -->
+                    <button class="btn btn-success"
+                        onclick="toggleStockStatus(this, 'scaollop', this.closest('.card').querySelector('.dish-image'))">
+                        Mark as Out of Stock
+                    </button>
+            
+                    <!-- Change Image -->
+                    <button class="btn btn-primary"
+                        onclick="changeDishImage('scaollop', this.closest('.card').querySelector('.dish-image'))">
+                        Change Image
+                    </button>
+            
+                    <!-- Change Price -->
+                    <button class="btn btn-warning text-dark"
+                        onclick="changeDishPrice('scaollop', this.closest('.card').querySelector('.dish-price'))">
+                        Change Price
+                    </button>
+            
+                    <!-- Delete Dish -->
+                    <button class="btn btn-danger"
+                        onclick="confirmDelete(this.closest('.card'), 'scaollop')">
+                        Delete
+                    </button>
+                </div>              </div>
+            </div>
+    
+            <div class="col-md-3">
+              <div class="card" style="width: 15rem;">
+                <img src="../images/milkbar-menu/margrirta.jpeg" class="card-img-top dish-image" alt="...">
+                <span class="padding-top changing-color d-flex justify-content-between">
+                  <p class="card-text ">Margherita</p>
+                  <span class="dish-price">0.45</span>
+                </span>
+                <div class="d-grid gap-2">
+                    <!-- Toggle Stock -->
+                    <button class="btn btn-success"
+                        onclick="toggleStockStatus(this, 'Margherita', this.closest('.card').querySelector('.dish-image'))">
+                        Mark as Out of Stock
+                    </button>
+            
+                    <!-- Change Image -->
+                    <button class="btn btn-primary"
+                        onclick="changeDishImage('Margherita', this.closest('.card').querySelector('.dish-image'))">
+                        Change Image
+                    </button>
+            
+                    <!-- Change Price -->
+                    <button class="btn btn-warning text-dark"
+                        onclick="changeDishPrice('Margherita', this.closest('.card').querySelector('.dish-price'))">
+                        Change Price
+                    </button>
+            
+                    <!-- Delete Dish -->
+                    <button class="btn btn-danger"
+                        onclick="confirmDelete(this.closest('.card'), 'Margherita')">
+                        Delete
+                    </button>
+                </div>              </div>
+            </div>
+    
+            <div class="col-md-3">
+              <div class="card" style="width: 15rem;">
+                <img src="../images/milkbar-menu/vegetables-pizza.gif" class="card-img-top dish-image" alt="...">
+                <span class="padding-top changing-color d-flex justify-content-between">
+                  <p class="card-text ">Vegetables Pizza</p>
+                  <span class="dish-price">0.60</span>
+                </span>
+                <div class="d-grid gap-2">
+                    <!-- Toggle Stock -->
+                    <button class="btn btn-success"
+                        onclick="toggleStockStatus(this, 'Vegetables Pizza', this.closest('.card').querySelector('.dish-image'))">
+                        Mark as Out of Stock
+                    </button>
+            
+                    <!-- Change Image -->
+                    <button class="btn btn-primary"
+                        onclick="changeDishImage('Vegetables Pizza', this.closest('.card').querySelector('.dish-image'))">
+                        Change Image
+                    </button>
+            
+                    <!-- Change Price -->
+                    <button class="btn btn-warning text-dark"
+                        onclick="changeDishPrice('Vegetables Pizza', this.closest('.card').querySelector('.dish-price'))">
+                        Change Price
+                    </button>
+            
+                    <!-- Delete Dish -->
+                    <button class="btn btn-danger"
+                        onclick="confirmDelete(this.closest('.card'), 'Vegetables Pizza')">
+                        Delete
+                    </button>
+                </div>              </div>
+            </div>
+    
+            <div class="col-md-3">
+              <div class="card" style="width: 15rem;">
+                <img src="../images/milkbar-menu/potato.jpeg" class="card-img-top dish-image" alt="...">
+                <span class="padding-top changing-color d-flex justify-content-between">
+                  <p class="card-text ">potato</p>
+                  <span class="dish-price">0.75</span>
+                </span>
+                <div class="d-grid gap-2">
+                    <!-- Toggle Stock -->
+                    <button class="btn btn-success"
+                        onclick="toggleStockStatus(this, 'potato', this.closest('.card').querySelector('.dish-image'))">
+                        Mark as Out of Stock
+                    </button>
+            
+                    <!-- Change Image -->
+                    <button class="btn btn-primary"
+                        onclick="changeDishImage('potato', this.closest('.card').querySelector('.dish-image'))">
+                        Change Image
+                    </button>
+            
+                    <!-- Change Price -->
+                    <button class="btn btn-warning text-dark"
+                        onclick="changeDishPrice('potato', this.closest('.card').querySelector('.dish-price'))">
+                        Change Price
+                    </button>
+            
+                    <!-- Delete Dish -->
+                    <button class="btn btn-danger"
+                        onclick="confirmDelete(this.closest('.card'), 'potato')">
+                        Delete
+                    </button>
+                </div>              </div>
+            </div>
+    
+            <div class="col-md-3">
+              <div class="card" style="width: 15rem;">
+                <img src="../images/milkbar-menu/potato-sandwich.jpeg" class="card-img-top dish-image" alt="...">
+                <span class="padding-top changing-color d-flex justify-content-between">
+                  <p class="card-text ">potato Sandwich</p>
+                  <span class="dish-price">0.40</span>
+                </span>
+                <div class="d-grid gap-2">
+                    <!-- Toggle Stock -->
+                    <button class="btn btn-success"
+                        onclick="toggleStockStatus(this, 'potato Sandwich', this.closest('.card').querySelector('.dish-image'))">
+                        Mark as Out of Stock
+                    </button>
+            
+                    <!-- Change Image -->
+                    <button class="btn btn-primary"
+                        onclick="changeDishImage('potato Sandwich', this.closest('.card').querySelector('.dish-image'))">
+                        Change Image
+                    </button>
+            
+                    <!-- Change Price -->
+                    <button class="btn btn-warning text-dark"
+                        onclick="changeDishPrice('potato Sandwich', this.closest('.card').querySelector('.dish-price'))">
+                        Change Price
+                    </button>
+            
+                    <!-- Delete Dish -->
+                    <button class="btn btn-danger"
+                        onclick="confirmDelete(this.closest('.card'), 'potato Sandwich')">
+                        Delete
+                    </button>
+                </div>              </div>
+            </div>
+    
+            <div class="col-md-3">
+              <div class="card" style="width: 15rem;">
+                <img src="../images/milkbar-menu/potato-with-cheese.jpg" class="card-img-top dish-image dish-image" alt="...">
+                <span class="padding-top changing-color d-flex justify-content-between">
+                  <p class="card-text ">potato with cheese</p>
+                  <span class="dish-price">0.75</span>
+                </span>
+                <div class="d-grid gap-2">
+                    <!-- Toggle Stock -->
+                    <button class="btn btn-success"
+                        onclick="toggleStockStatus(this, 'potato with cheese', this.closest('.card').querySelector('.dish-image'))">
+                        Mark as Out of Stock
+                    </button>
+            
+                    <!-- Change Image -->
+                    <button class="btn btn-primary"
+                        onclick="changeDishImage('potato with cheese', this.closest('.card').querySelector('.dish-image'))">
+                        Change Image
+                    </button>
+            
+                    <!-- Change Price -->
+                    <button class="btn btn-warning text-dark"
+                        onclick="changeDishPrice('potato with cheese', this.closest('.card').querySelector('.dish-price'))">
+                        Change Price
+                    </button>
+            
+                    <!-- Delete Dish -->
+                    <button class="btn btn-danger"
+                        onclick="confirmDelete(this.closest('.card'), 'potato with cheese')">
+                        Delete
+                    </button>
+                </div>              </div>
+            </div>
+    
+            <div class="col-md-3">
+              <div class="card" style="width: 15rem;">
+                <img src="../images/milkbar-menu/zinger.jpeg" class="card-img-top dish-image dish-image" alt="...">
+                <span class="padding-top changing-color d-flex justify-content-between">
+                  <p class="card-text ">zinger</p>
+                  <span class="dish-price">1.40</span>
+                </span>
+                <div class="d-grid gap-2">
+                    <!-- Toggle Stock -->
+                    <button class="btn btn-success"
+                        onclick="toggleStockStatus(this, 'zinger', this.closest('.card').querySelector('.dish-image'))">
+                        Mark as Out of Stock
+                    </button>
+            
+                    <!-- Change Image -->
+                    <button class="btn btn-primary"
+                        onclick="changeDishImage('zinger', this.closest('.card').querySelector('.dish-image'))">
+                        Change Image
+                    </button>
+            
+                    <!-- Change Price -->
+                    <button class="btn btn-warning text-dark"
+                        onclick="changeDishPrice('zinger', this.closest('.card').querySelector('.dish-price'))">
+                        Change Price
+                    </button>
+            
+                    <!-- Delete Dish -->
+                    <button class="btn btn-danger"
+                        onclick="confirmDelete(this.closest('.card'), 'zinger')">
+                        Delete
+                    </button>
+                </div>              </div>
+            </div>
+    
+            <div class="col-md-3">
+              <div class="card" style="width: 15rem;">
+                <img src="../images/milkbar-menu/zinger-with-cheese.jpeg" class="card-img-top dish-image dish-image" alt="...">
+                <span class="padding-top changing-color d-flex justify-content-between">
+                  <p class="card-text ">zinger with cheese</p>
+                  <span class="dish-price">1.60</span>
+                </span>
+                <div class="d-grid gap-2">
+                    <!-- Toggle Stock -->
+                    <button class="btn btn-success"
+                        onclick="toggleStockStatus(this, 'zinger with cheese', this.closest('.card').querySelector('.dish-image'))">
+                        Mark as Out of Stock
+                    </button>
+            
+                    <!-- Change Image -->
+                    <button class="btn btn-primary"
+                        onclick="changeDishImage('zinger with cheese', this.closest('.card').querySelector('.dish-image'))">
+                        Change Image
+                    </button>
+            
+                    <!-- Change Price -->
+                    <button class="btn btn-warning text-dark"
+                        onclick="changeDishPrice('zinger with cheese', this.closest('.card').querySelector('.dish-price'))">
+                        Change Price
+                    </button>
+            
+                    <!-- Delete Dish -->
+                    <button class="btn btn-danger"
+                        onclick="confirmDelete(this.closest('.card'), 'zinger with cheese')">
+                        Delete
+                    </button>
+                </div>              </div>
+            </div>
+    
+    
+          </div>
+        </div>
+      </section>
+    
+      <section class="menusSYS padding100" id="drinks">
+        <h3 class="text-center fw-bold p-4">Drinks</h3>
+        <div class="container">
+          <div class="row d-flex justify-content-center">
+    
+            <div class="col-md-3">
+              <div class="card" style="width: 15rem;">
+                <img src="../images/milkbar-menu//barbican.png" class="card-img-top img-fluid dish-image dish-image" alt="...">
+                <span class="padding-top changing-color d-flex justify-content-between">
+                  <p class="card-text ">barbican</p>
+                  <span class="dish-price">0.65</span>
+                </span>
+                <div class="d-grid gap-2">
+                    <!-- Toggle Stock -->
+                    <button class="btn btn-success"
+                        onclick="toggleStockStatus(this, 'barbican', this.closest('.card').querySelector('.dish-image'))">
+                        Mark as Out of Stock
+                    </button>
+            
+                    <!-- Change Image -->
+                    <button class="btn btn-primary"
+                        onclick="changeDishImage('barbican', this.closest('.card').querySelector('.dish-image'))">
+                        Change Image
+                    </button>
+            
+                    <!-- Change Price -->
+                    <button class="btn btn-warning text-dark"
+                        onclick="changeDishPrice('barbican', this.closest('.card').querySelector('.dish-price'))">
+                        Change Price
+                    </button>
+            
+                    <!-- Delete Dish -->
+                    <button class="btn btn-danger"
+                        onclick="confirmDelete(this.closest('.card'), 'barbican')">
+                        Delete
+                    </button>
+                </div>              </div>
+            </div>
+    
+            <div class="col-md-3">
+              <div class="card" style="width: 15rem;">
+                <img src="../images/milkbar-menu//barbican-cans.png" class="card-img-top img-fluid dish-image" alt="...">
+                <span class="padding-top changing-color d-flex justify-content-between">
+                  <p class="card-text ">barbican cans</p>
+                  <span class="dish-price">0.50</span>
+                </span>
+                <div class="d-grid gap-2">
+                    <!-- Toggle Stock -->
+                    <button class="btn btn-success"
+                        onclick="toggleStockStatus(this, 'barbican cans', this.closest('.card').querySelector('.dish-image'))">
+                        Mark as Out of Stock
+                    </button>
+            
+                    <!-- Change Image -->
+                    <button class="btn btn-primary"
+                        onclick="changeDishImage('barbican cans', this.closest('.card').querySelector('.dish-image'))">
+                        Change Image
+                    </button>
+            
+                    <!-- Change Price -->
+                    <button class="btn btn-warning text-dark"
+                        onclick="changeDishPrice('barbican cans', this.closest('.card').querySelector('.dish-price'))">
+                        Change Price
+                    </button>
+            
+                    <!-- Delete Dish -->
+                    <button class="btn btn-danger"
+                        onclick="confirmDelete(this.closest('.card'), 'barbican cans')">
+                        Delete
+                    </button>
+                </div>              </div>
+            </div>
+    
+            <div class="col-md-3">
+              <div class="card" style="width: 15rem;">
+                <img src="../images/milkbar-menu/rani.png" class="card-img-top img-fluid dish-image" alt="...">
+                <span class="padding-top changing-color d-flex justify-content-between">
+                  <p class="card-text ">rani</p>
+                  <span class="dish-price">0.50</span>
+                </span>
+                <div class="d-grid gap-2">
+                    <!-- Toggle Stock -->
+                    <button class="btn btn-success"
+                        onclick="toggleStockStatus(this, 'rani', this.closest('.card').querySelector('.dish-image'))">
+                        Mark as Out of Stock
+                    </button>
+            
+                    <!-- Change Image -->
+                    <button class="btn btn-primary"
+                        onclick="changeDishImage('rani', this.closest('.card').querySelector('.dish-image'))">
+                        Change Image
+                    </button>
+            
+                    <!-- Change Price -->
+                    <button class="btn btn-warning text-dark"
+                        onclick="changeDishPrice('rani', this.closest('.card').querySelector('.dish-price'))">
+                        Change Price
+                    </button>
+            
+                    <!-- Delete Dish -->
+                    <button class="btn btn-danger"
+                        onclick="confirmDelete(this.closest('.card'), 'rani')">
+                        Delete
+                    </button>
+                </div>              </div>
+            </div>
+    
+            <div class="col-md-3">
+              <div class="card" style="width: 15rem;">
+                <img src="../images/milkbar-menu/matrics.jpg" class="card-img-top img-fluid dish-image" alt="...">
+                <span class="padding-top changing-color d-flex justify-content-between">
+                  <p class="card-text ">matrics</p>
+                  <span class="dish-price">0.35</span>
+                </span>
+                <div class="d-grid gap-2">
+                    <!-- Toggle Stock -->
+                    <button class="btn btn-success"
+                        onclick="toggleStockStatus(this, 'matrics', this.closest('.card').querySelector('.dish-image'))">
+                        Mark as Out of Stock
+                    </button>
+            
+                    <!-- Change Image -->
+                    <button class="btn btn-primary"
+                        onclick="changeDishImage('matrics', this.closest('.card').querySelector('.dish-image'))">
+                        Change Image
+                    </button>
+            
+                    <!-- Change Price -->
+                    <button class="btn btn-warning text-dark"
+                        onclick="changeDishPrice('matrics', this.closest('.card').querySelector('.dish-price'))">
+                        Change Price
+                    </button>
+            
+                    <!-- Delete Dish -->
+                    <button class="btn btn-danger"
+                        onclick="confirmDelete(this.closest('.card'), 'matrics')">
+                        Delete
+                    </button>
+                </div>              </div>
+            </div>
+    
+          </div>
+        </div>
+      </section>
+    
+      <section class="menusSYS" id="sweets">
+        <h3 class="text-center fw-bold p-4"> Sweets</h3>
+        <div class="container">
+          <div class="row d-flex justify-content-center">
+    
+            <div class="col-md-3">
+              <div class="card" style="width: 15rem;">
+                <img src="../images/milkbar-menu/canary-chocolate.jpg" class="card-img-top img-fluid dish-image" alt="...">
+                <span class="padding-top changing-color d-flex justify-content-between">
+                  <p class="card-text ">canary chocolate</p>
+                  <span class="dish-price">0.25</span>
+                </span>
+                <div class="d-grid gap-2">
+                    <!-- Toggle Stock -->
+                    <button class="btn btn-success"
+                        onclick="toggleStockStatus(this, 'canary chocolate', this.closest('.card').querySelector('.dish-image'))">
+                        Mark as Out of Stock
+                    </button>
+            
+                    <!-- Change Image -->
+                    <button class="btn btn-primary"
+                        onclick="changeDishImage('canary chocolate', this.closest('.card').querySelector('.dish-image'))">
+                        Change Image
+                    </button>
+            
+                    <!-- Change Price -->
+                    <button class="btn btn-warning text-dark"
+                        onclick="changeDishPrice('canary chocolate', this.closest('.card').querySelector('.dish-price'))">
+                        Change Price
+                    </button>
+            
+                    <!-- Delete Dish -->
+                    <button class="btn btn-danger"
+                        onclick="confirmDelete(this.closest('.card'), 'canary chocolate')">
+                        Delete
+                    </button>
+                </div>              </div>
+            </div>
+    
+            <div class="col-md-3">
+              <div class="card" style="width: 15rem;">
+                <img src="../images/milkbar-menu/chipseco.png" class="card-img-top img-fluid dish-image" alt="...">
+                <span class="padding-top changing-color d-flex justify-content-between">
+                  <p class="card-text ">chipseco</p>
+                  <span class="dish-price">0.50</span>
+                </span>
+                <div class="d-grid gap-2">
+                    <!-- Toggle Stock -->
+                    <button class="btn btn-success"
+                        onclick="toggleStockStatus(this, 'chipseco', this.closest('.card').querySelector('.dish-image'))">
+                        Mark as Out of Stock
+                    </button>
+            
+                    <!-- Change Image -->
+                    <button class="btn btn-primary"
+                        onclick="changeDishImage('chipseco', this.closest('.card').querySelector('.dish-image'))">
+                        Change Image
+                    </button>
+            
+                    <!-- Change Price -->
+                    <button class="btn btn-warning text-dark"
+                        onclick="changeDishPrice('chipseco', this.closest('.card').querySelector('.dish-price'))">
+                        Change Price
+                    </button>
+            
+                    <!-- Delete Dish -->
+                    <button class="btn btn-danger"
+                        onclick="confirmDelete(this.closest('.card'), 'chipseco')">
+                        Delete
+                    </button>
+                </div>              </div>
+            </div>
+    
+            <div class="col-md-3">
+              <div class="card" style="width: 15rem;">
+                <img src="../images/milkbar-menu/sunbites.jpg" class="card-img-top img-fluid dish-image" alt="...">
+                <span class="padding-top changing-color d-flex justify-content-between">
+                  <p class="card-text ">sunbite</p>
+                  <span class="dish-price">0.50</span>
+                </span>
+                <div class="d-grid gap-2">
+                    <!-- Toggle Stock -->
+                    <button class="btn btn-success"
+                        onclick="toggleStockStatus(this, 'sunbite', this.closest('.card').querySelector('.dish-image'))">
+                        Mark as Out of Stock
+                    </button>
+            
+                    <!-- Change Image -->
+                    <button class="btn btn-primary"
+                        onclick="changeDishImage('sunbite', this.closest('.card').querySelector('.dish-image'))">
+                        Change Image
+                    </button>
+            
+                    <!-- Change Price -->
+                    <button class="btn btn-warning text-dark"
+                        onclick="changeDishPrice('sunbite', this.closest('.card').querySelector('.dish-price'))">
+                        Change Price
+                    </button>
+            
+                    <!-- Delete Dish -->
+                    <button class="btn btn-danger"
+                        onclick="confirmDelete(this.closest('.card'), 'sunbite')">
+                        Delete
+                    </button>
+                </div>              </div>
+            </div>
+    
+          </div>
+        </div>
+      </section>
+
+
+
+
+      <script src="https://kit.fontawesome.com/257e1e7ee4.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+        <script src="SYS.js"></script>
+
+        <!--Scrool to up bottom-->
+<a href="#" class="scroll-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+
+</body>
+</html>
